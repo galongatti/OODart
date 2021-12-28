@@ -1,39 +1,39 @@
-class Pessoa {
-  String nomePessoa = "";
-  int idadePessoa = 0;
+class Person {
+  String namePerson = "";
+  int agePerson = 0;
 
-  String get getNome {
-    return nomePessoa;
+  String get getName {
+    return namePerson;
   }
 
-  set setNome(String nome) {
-    nomePessoa = nome;
+  set setName(String name) {
+    namePerson = name;
   }
 
-  int get getIdade {
-    return idadePessoa;
+  int get getAge {
+    return agePerson;
   }
 
-  set setIdade(int idade) => idadePessoa = idade;
+  set setAge(int age) => agePerson = age;
 
   @override
   String toString() {
-    return ("$nomePessoa tem $idadePessoa anos");
+    return ("$namePerson is $agePerson years old");
   }
 
-  void fazerAniversario() {
-    idadePessoa++;
+  void increaseAge() {
+    agePerson++;
   }
 }
 
 void main() {
-  Pessoa p1 = Pessoa();
-  p1.setNome = "Gabriel";
-  p1.setIdade = 23;
+  Person p1 = Person();
+  p1.setName = "Gabriel";
+  p1.setAge = 23;
 
   print(p1.toString());
 
-  p1.fazerAniversario();
+  p1.increaseAge();
 
   print(p1.toString());
 }
