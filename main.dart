@@ -45,7 +45,5 @@ void main() {
 
   print(p1.toString());
   
-  
-  
   print(p1.getCPF);
 }
