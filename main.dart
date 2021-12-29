@@ -1,28 +1,29 @@
 class Person {
-  String namePerson = "";
-  int agePerson = 0;
+  //Attribute with _ is private
+  String _namePerson = "";
+  int _agePerson = 0;
 
   String get getName {
-    return namePerson;
+    return _namePerson;
   }
 
   set setName(String name) {
-    namePerson = name;
+    _namePerson = name;
   }
 
   int get getAge {
-    return agePerson;
+    return _agePerson;
   }
 
-  set setAge(int age) => agePerson = age;
+  set setAge(int age) => _agePerson = age;
 
   @override
   String toString() {
-    return ("$namePerson is $agePerson years old");
+    return ("$_namePerson is $_agePerson years old");
   }
 
   void increaseAge() {
-    agePerson++;
+    _agePerson++;
   }
 }
 
